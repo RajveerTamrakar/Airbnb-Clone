@@ -1,0 +1,34 @@
+*{
+    text-align: center;
+}
+.box1, .box2, .box3, .box4 {
+    height: 100px;
+    width: 100px;
+    border: 10px solid black;
+border-radius: 20%;
+margin: 1.5rem;
+padding: 1rem;
+}
+.boxes{
+    display: flex;
+    padding: 2rem;
+    justify-content: center;
+}
+.h1,p{
+    font-weight: bold;
+}
+.box1 {
+    background-color: rgb(222, 55, 89);
+}
+.box2 {
+    background-color: orange;
+}
+.box3 {
+    background-color: rgb(1, 168, 170);
+}
+.box4 {
+    background-color: rgb(80, 80, 204);
+}
+.flash{
+    background-color: white;
+}

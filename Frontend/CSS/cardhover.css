@@ -1,0 +1,28 @@
+.card {
+    width: 215px;
+    height: 300px;
+    display: inline-block;
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 2px 3px 15px black;
+
+}
+
+img {
+    width: 215px;
+    height: 180px;
+    border-radius: 5px 5px 0 0;
+}
+
+.descr {
+    padding: 0 0 0 2px;
+}
+
+.descr h3 {
+    font-family: cursive;
+}
+
+.card:hover {
+    box-shadow: 8px 12px 60px black;
+}

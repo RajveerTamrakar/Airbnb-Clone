@@ -1,0 +1,35 @@
+div {
+    height: 150px;
+    width: 450px;
+    background-color: antiquewhite;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(176, 83, 83);
+    border-left-color: rgb(44, 30, 240);
+    border-left-style: dotted;
+    border-top-color: purple;
+    border-radius: 5%;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 40px;
+    margin-left: 32%;
+}
+h1{
+   width: 255px;
+    border-width: 4px;
+    border-style: double;
+    border-color: darkslateblue;
+    border-radius: 8%;
+}
+button {
+    height: 30px;
+    width: 75px;
+    background-color: beige;
+    border-width: 3.5px;
+    border-style: solid;
+    border-color: crimson;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}

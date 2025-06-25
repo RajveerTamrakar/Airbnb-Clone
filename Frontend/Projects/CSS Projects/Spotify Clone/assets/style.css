@@ -1,0 +1,267 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+    color: white;
+    background-color: rgb(29, 27, 27);
+    overflow: hidden;
+}
+.main {
+    display: flex;
+    height: 100vh;
+    border-radius: 1rem;
+}
+.sidebar {
+    background-color: rgb(0, 0, 0);
+    width: 350px;
+    border-radius: 1rem;
+    text-decoration: none;
+    margin-right: 0.5rem;
+}
+.main_content {
+    background-color: rgb(29, 27, 27);
+    flex: 1;
+    border-radius: 1rem;
+    overflow: auto;
+    padding: 0rem 1.5rem 10rem 1.5rem;
+}
+.music_player {
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 72px;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+.nav {
+    background-color: rgb(29, 27, 27);
+    border-radius: 1rem;
+    height: 100px;
+    padding: 8px 12px 8px 12px;
+    margin: 0.5rem 0.5rem 0rem 0.5rem;
+}
+.nav-option {
+    opacity: 0.65;
+    line-height: 2.5rem;
+    padding: 0.4rem;
+}
+.nav-option:hover {
+    opacity: 1;
+}
+.nav-option a {
+    font-size: 1rem;
+    margin-left: 1.5rem;
+}
+.nav-option i {
+    font-size: 1.25rem;
+}
+.library {
+    margin: 0.5rem 0.5rem 0rem 0.5rem;
+    border-radius: 1rem;
+    height: 100vh;
+    margin: 0.5rem 0.5rem 0rem 0.5rem;
+    background-color: rgb(29, 27, 27);
+}
+.option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.lib-option img {
+    height: 1.35rem;
+}
+.lib-option {
+    padding-left: 0.5rem;
+    margin-left: 0.75rem;
+    opacity: 0.6;
+}
+.lib-option a {
+    margin-left: 1rem;
+}
+.lib-options {
+    padding: 0rem 1rem 0rem 0rem;
+    margin-right: 1rem;
+    opacity: 0.6;
+}
+.lib-options i {
+    margin-right: 1.7rem;
+    margin-top: 1rem;
+}
+.lib-option:hover {
+    opacity: 1;
+}
+.lib-options:hover {
+    opacity: 1;
+}
+.boxes {
+    background-color: rgb(29, 27, 27);
+}
+.box {
+    background-color: rgb(29, 27, 27);
+    padding: 0.5rem;
+    padding: 1rem;
+}
+.box1 {
+    background-color: #282525;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.box1 h4 {
+    background-color: #282525;
+}
+.box1 p {
+    opacity: 0.6;
+    background-color: #282525;
+}
+.box2 {
+    background-color: #282525;
+    border-radius: 1rem;
+    height: 10rem;
+    padding: 0.7rem;
+    margin-top: 1rem;
+}
+.box2 h4 {
+    background-color: #282525;
+}
+.box2 p {
+    opacity: 0.6;
+    background-color: #282525;
+}
+.badge {
+    background-color: white;
+    color: black;
+    height: 1.5rem;
+    width: fit-content;
+    margin-right: 2rem;
+    border-radius: 1.5rem;
+    padding: 0.25rem 1rem;
+    margin-top: 1rem;
+    border: none;
+    font-weight: 7000px;
+}
+.sticky {
+    display: flex;
+    z-index: 20;
+    top: 0rem;
+    background-color: rgb(29, 27, 27);
+    justify-content: space-between;
+    align-items: baseline;
+    position: sticky;
+    height: 50px;
+}
+.main_icons {
+    margin-left: 1rem;
+}
+.main_opt {
+    margin-right: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.badge i {
+    background-color: white;
+    color: black;
+    margin: 0 10px 0 0;
+}
+@media (max-width: 1000px) {
+    .hide {
+        display: none;
+    }
+}
+.cards h2,p {
+    font-weight: 550px;
+    padding: 1rem 0rem 0rem 1.5rem;
+
+}
+.card {
+    width: 150px;
+    border-radius: 0.6rem;
+    padding: 1rem;
+    height: 250px;
+}
+.card-cont {
+    display: flex;
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+    width: 190px;
+}
+.card-img {
+    width: 100%;
+    border-radius: 0.6rem;
+}
+.card-title {
+    font-weight: bold;
+    padding: 0.4rem;
+    margin: 0.4rem 0rem 0rem 0.4rem;
+}
+.card-info {
+    font-size: 0.9rem;
+    opacity: 0.75;
+    margin: 0.4rem 0 0 0.4rem;
+}
+.card:hover {
+    background-color: #282525;
+    border-radius: 0.6rem;
+
+}
+.trends {
+    display: flex;
+    flex-wrap: wrap;
+}
+.card-head {
+    padding: 1rem;
+}
+.fev {
+    display: flex;
+    flex-wrap: wrap;
+}
+.music_player {
+    display: flex;
+}
+.song {
+    display: flex;
+}
+.song img {
+    height: 5.5rem;
+    padding: 0rem 0rem 0.8rem 1rem;
+}
+.song h4 {
+    padding: 1rem 0rem 0rem 1rem;
+}
+.song p {
+    opacity: 0.7;
+    padding: 0.5rem 0rem 1rem 1rem;
+}
+.song i {
+    padding: 2rem 0rem 0rem 1rem;
+}
+.player {
+    width: 50%;
+}
+.controllers {
+
+    margin: 1rem 0rem 0rem 25rem;
+}
+.controllers img {
+    height: 18px;
+    justify-content: space-between;
+    margin-left: 1rem;
+    opacity: 0.6;
+}
+.controllers img:hover {
+    opacity: 1;
+}
+.progress-bar {
+    width: 75%;
+    background-color: #282525;
+    appearance: none;
+}
+.playback-bar {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0rem 2rem 20rem;
+    cursor: pointer;
+}

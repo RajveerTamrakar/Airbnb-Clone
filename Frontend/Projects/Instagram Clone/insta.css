@@ -1,0 +1,623 @@
+/* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Roboto", sans-serif;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+
+.main {
+    display: flex;
+    height: 100vh;
+}
+
+.toolbar {
+    padding: 8px 12px 20px 12px;
+    width: 17.8%;
+
+}
+.scroll {
+    display: flex;
+    flex: 1;
+    overflow-y: scroll;
+    scrollbar-color: rgb(40, 40, 40) rgb(28, 28, 28);
+    scrollbar-width: auto;
+    
+}
+
+.homepage {
+    width: 68%;
+    margin-right: 1rem;
+}
+
+.suggestions {
+    background-color: orange;
+    flex: 1;
+}
+
+.logo-written {
+    margin: 1px;
+    width: 103px;
+    height: 29px;
+    padding: 25px 12px 16px 12px;
+}
+
+.tools {
+    padding-top: 20px;
+}
+
+#btn {
+    display: flex;
+    filter: brightness(150%);
+    padding: 0.75rem;
+    width: 196px;
+    height: 24px;
+    margin: 4px 0px 4px 0px;
+    opacity: 0.8;
+}
+
+#btn a {
+    text-decoration: none;
+    text-align: center;
+    margin-left: 1.3rem;
+}
+
+#btn img {
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
+}
+
+#btn i {
+    cursor: pointer;
+    height: 24px;
+    width: 24px;
+}
+
+#btn:hover {
+    background-color: rgb(23, 23, 23);
+    border-radius: 0.5rem;
+}
+
+#btn a:hover {
+    background-color: rgb(23, 23, 23);
+}
+
+#btn i:hover {
+    background-color: rgb(23, 23, 23);
+    height: 26px;
+    width: 26px;
+}
+
+#btn img:hover {
+    background-color: rgb(23, 23, 23);
+    width: 26px;
+    height: 26px;
+}
+
+.more {
+    bottom: 0px;
+}
+
+.stories {
+    display: flex;
+    height: 85px;
+    margin-top: 1.2rem;
+    margin-left: 3rem;
+    overflow-x: hidden;
+}
+
+#btnstr {
+    display: flex;
+    height: 66px;
+    width: 66px;
+    border-radius: 50%;
+    margin-right: 2.1rem;
+    border-radius: 50px;
+    border: 2.2px solid rgb(203, 33, 61);
+    cursor: pointer;
+
+}
+
+.name {
+    font-size: x-small;
+}
+
+.posts {
+    padding: 1rem;
+    margin-left: 6rem;
+}
+
+.head {
+    display: flex;
+    
+}
+
+.dp {
+    height: 42px;
+    width: 42px;
+    border-radius: 50%;
+    display: flex;
+    cursor: pointer;
+}
+
+.username {
+    padding: 0.5rem;
+    margin-left: 7px;
+    cursor: pointer;
+}
+
+.time {
+    padding: 0.5rem;
+    margin-left: -6px;
+    font-size: 0.8rem;
+    opacity: 0.7;
+    margin-top: 3px;
+    display: flex;
+    cursor: pointer;
+}
+
+.post {
+    margin-top: 1rem;
+    display: flex;
+    height: 468px;
+    width: 468px;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.rxns {
+    display: flex;
+    
+}
+
+.rxns img {
+    height: 24px;
+    width: 24px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+#bookmark {
+    margin-left: 19.1rem;
+}
+.likes {
+    margin-top: 0.5rem;
+    cursor: pointer;
+}
+.caption {
+    display: flex;
+    margin-top: 0.5rem;
+    cursor: pointer;
+}
+.content {
+    padding-left: 8px;
+    overflow-x: hidden;
+}
+.espn {
+    margin-right: 1rem;
+}
+.comment{
+    opacity: 0.8;
+    margin-top: 0.5rem;
+}
+::-webkit-scrollbar {
+    width: 12px;
+} 
+*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Roboto", sans-serif;
+    background-color: black;
+    color: white;
+}
+
+body,
+html {
+    overflow: hidden;
+}
+
+.main {
+    display: flex;
+    height: 100vh;
+}
+
+.toolbar {
+    padding: 8px 12px 20px 12px;
+    width: 17.8%;
+}
+
+.scroll {
+    display: flex;
+    flex: 1;
+    overflow-y: auto;
+    scrollbar-color: rgb(40, 40, 40) rgb(28, 28, 28);
+    scrollbar-width: auto;
+    position: relative;
+    margin-left: 10px;
+}
+
+.homepage {
+    width: 68%;
+    margin-right: 1rem;
+}
+
+.suggestions {
+    margin-top: 36px;
+    flex: 1;
+    height: 100vh;
+    margin-left: -10px;
+}
+
+.logo-written {
+    margin: 1px;
+    width: 103px;
+    height: 29px;
+    padding: 25px 12px 16px 12px;
+}
+
+.tools {
+    padding-top: 20px;
+}
+
+#btn {
+    display: flex;
+    filter: brightness(150%);
+    padding: 0.75rem;
+    width: 196px;
+    height: 24px;
+    margin: 4px 0px 4px 0px;
+    opacity: 0.8;
+}
+
+#btn a {
+    text-decoration: none;
+    text-align: center;
+    margin-left: 1.3rem;
+}
+
+#btn img {
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
+}
+
+#btn i {
+    cursor: pointer;
+    height: 24px;
+    width: 24px;
+}
+
+#btn:hover {
+    background-color: rgb(23, 23, 23);
+    border-radius: 0.5rem;
+}
+
+#btn a:hover {
+    background-color: rgb(23, 23, 23);
+}
+
+#btn i:hover {
+    background-color: rgb(23, 23, 23);
+    height: 26px;
+    width: 26px;
+}
+
+#btn img:hover {
+    background-color: rgb(23, 23, 23);
+    width: 26px;
+    height: 26px;
+}
+
+
+.stories {
+    display: flex;
+    height: 100px;
+    margin-top: 1.2rem;
+    margin-left: 3rem;
+    overflow-x: auto;
+}
+
+.story {
+    position: relative;
+    width: 56x;
+    height: 56px;
+    margin-right: 1rem;
+    border-radius: 50%;
+    padding: 3px;
+    background: conic-gradient(from 0deg at 50% 50%,
+            #f09433,
+            #e6683c,
+            #dc2743,
+            #cc2366,
+            #bc1888,
+            #dc2743,
+            #e6683c,
+            #f09433,
+            #f09433);
+}
+
+#btnstr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 66px;
+    width: 66px;
+    margin-right: 1rem;
+    border-radius: 50%;
+    border: 2px solid rgb(203, 33, 61);
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+
+#btnstr img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.name {
+    font-size: x-small;
+}
+
+.posts {
+    padding: 1rem;
+    margin-left: 6rem;
+}
+
+.head {
+    display: flex;
+}
+
+.profile {
+    height: 42px;
+    width: 42px;
+    border-radius: 50%;
+    display: flex;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.username {
+    padding: 0.5rem;
+    margin-left: 7px;
+    cursor: pointer;
+}
+
+.time {
+    padding: 0.5rem;
+    margin-left: -6px;
+    font-size: 0.8rem;
+    opacity: 0.7;
+    margin-top: 3px;
+    display: flex;
+    cursor: pointer;
+}
+
+.post {
+    margin-top: 1rem;
+    display: flex;
+    height: 468px;
+    width: 468px;
+    justify-content: centre;
+    align-items: centre;
+    margin-right: 1rem;
+    cursor: pointer;
+
+}
+
+.post img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 3px;
+    border: 2px  white;
+}
+
+.rxns {
+    display: flex;
+}
+
+.rxns img {
+    height: 24px;
+    width: 24px;
+    padding: 8px;
+    cursor: pointer;
+
+}
+
+#bookmark {
+    margin-left: 19.4rem;
+
+}
+
+.likes {
+    margin-top: 0.5rem;
+    cursor: pointer;
+    font-weight: 2rem;
+}
+
+.caption {
+    display: flex;
+    margin-top: 0.5rem;
+    cursor: pointer;
+    overflow-x: hidden;
+}
+
+.content {
+    padding-left: 8px;
+    overflow-x: hidden;
+
+}
+
+.espn {
+    margin-right: 1rem;
+
+}
+
+.comment {
+    opacity: 0.8;
+    margin-top: 0.5rem;
+
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #333;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(31, 31, 31);
+    border-radius: 10px;
+    border: 3px solid rgb(28, 28, 28);
+}
+
+.card-cont {
+    padding: 16px;
+    border-radius: 20px;
+}
+
+.profiles {
+    display: flex;
+    padding: 0.4rem;
+}
+
+.pic {
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    display: flex;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.names {
+    font-size: 0.9rem;
+    padding: 0.3rem;
+    cursor: pointer;
+}
+
+.names p {
+    padding: 0.07rem;
+}
+
+.switch {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    font-size: small;
+    color: #0095f6;
+    cursor: pointer;
+}
+
+.switch:hover {
+    color: white;
+    font-size: 0.85rem;
+}
+
+.a1 {
+    display: flex;
+    margin-top: 2rem;
+    font-size: small;
+}
+
+.b1 {
+    opacity: 0.7;
+}
+
+.b2 {
+    margin-left: 5rem;
+    margin-left: 5.8rem;
+}
+
+.b2:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.rest {
+    padding-top: 1.5rem;
+
+}
+
+.end {
+    padding: 1rem;
+    opacity: 0.4;
+    font-size: 11px;
+    margin-top: 1.8rem;
+    cursor: pointer;
+}
+
+.l1 {
+    padding: 1rem;
+    opacity: 0.6;
+    margin-left: -1rem;
+    font-size: 11px;
+    margin-top: 1.8rem;
+
+}
+
+.vertical-line {
+    border-left: 2px solid #ccc;
+    /* Change the color and width of the line */
+    height: 100vh;
+    /* Full height */
+    position: absolute;
+    /* Position it absolutely */
+    left: 250px;
+    /* Adjust according to your layout */
+    top: 0;
+    opacity: 0.2;
+}
+
+.scroll {
+    margin-left: 10x;
+    /* Adjust according to your layout */
+}
+
+.post-divider {
+    border: none;
+    /* Remove default border */
+    border-top: 1px solid #ccc;
+    /* Add top border */
+    margin: 20px 0;
+    /* Adjust spacing as needed */
+    margin-left: 15px;
+    opacity: 0.2;
+}
+
+.follow {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    margin-left: 2rem;
+    font-size: small;
+    color: #0095f6;
+    cursor: pointer;
+}
+
+.follow:hover {
+    color: white;
+}
+
+.end p:hover {
+    text-decoration: underline;
+}
+
+.dot1 {
+    display: flex;
+    margin-bottom: 0.7rem;
+
+}
+
+.dot2 {
+    display: flex;
+}
+

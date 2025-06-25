@@ -1,0 +1,66 @@
+h1 {
+    color: #B92B27;
+}
+h3{
+    color: rgb(98, 13, 0) !important;
+}
+h3{
+    color: #B92B27;
+}
+#login {
+    color: red;
+    background-color: black;
+}
+#signup {
+    color: red;
+    background-color: black;
+}
+.upvote {
+    color: orange;
+    background-color: blue;
+}
+button:hover {
+    color: white;
+    background-color: black;
+}
+h3:hover {
+    text-decoration: underline;
+}
+button:active {
+    background-color: darkorange;
+}
+p:active {
+    font-weight: bold;
+    text-decoration: wavy;
+    color:chartreuse;
+}
+input[type="radio"]:checked +label {
+    font-weight: bold;
+    color: slateblue;
+}
+div:hover {
+    background-color: rgb(235, 164, 164);
+}
+nav:hover {
+    color: green;
+}
+nav:active{
+    text-decoration: bold;
+}
+button {
+    background-color: inherit;
+}
+input {
+    background-color: inherit;
+}
+#login:hover {
+    color: blue;
+    background-color: yellow;
+}
+#signup:hover {
+    color: blue;
+    background-color: yellow;
+}
+body {
+    background-color: darkgrey;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Index.</title>
+</head>
+
+<body>
+    <form action="/server">
+        <div>
+            <label for="age">I am 18+</label>
+            <input type="checkbox" name="age" />
+        </div>
+        <div>
+            <label for="fruit">Apple</label>
+            <input type="radio" name="fruit" value="Apple" />
+            <label for="fruit">Mango</label>
+            <input type="radio" name="fruit" value="Mango" />
+            <label for="fruit">Banana</label>
+            <input type="radio" name="fruit" value="Banana" />
+        </div>
+        <div>
+            Select Your Subjects:
+            <label for="subject">math</label>
+            <input type="radio" name="subject1" value="math" />
+            <label for="subject">science</label>
+            <input type="radio" name="subject2" value="science" />
+            <label for="subject">english</label>
+            <input type="radio" name="subject3" value="english" />
+        </div>
+        <div>
+            Choose your proffesion:
+            <select name="proffesion" id="proffesion">
+                <option value="">Select your option</option>
+                <option value="footballer">footballer</option>
+                <option value="mma">mma</option>
+                <option value="boxing">boxing</option>
+                <option value="cricketer">cricketer</option>
+            </select>
+        </div>
+        <div>
+            <label for="volume"> Volume</label>
+            <input type="range" min="0" max="100" name="vol" step="15" value="55" />
+        </div>
+        <div>
+            <label for="feedback">Please provide your valuable feedback:</label>
+            <textarea id="feedback" name="feedback" placeholder="enter your feedback here"></textarea>
+        </div>
+        <button>submit</button>
+    </form>
+</body>
+
+</html>
