@@ -588,12 +588,12 @@ console.log(`implicit return`);
 const multiplication = (a,b) => (a*b); */
 
 
-/*console.log(`timeout function`);
-console.log(`Muchas Gracias afficion`);
-setTimeout(() => {
-    console.log(`Siuuu`);
-}, 3500);
-console.log(`Esto para vosotros`);*/
+// console.log(`timeout function`);
+// console.log(`Muchas Gracias afficion`);
+// setTimeout(() => {
+//     console.log(`Siuuu`);
+// }, 3500);
+// console.log(`Esto para vosotros`); 
 
 
 
@@ -1202,6 +1202,7 @@ async function Demo() {
 /*console.log(`API's`);
 console.log(`JSON`);
 let jsonRes = '{"fact":"Phoenician cargo ships are thought to have brought the first domesticated cats to Europe in about 900 BC.","length":105}'
+//JSON is a common data format for sending and receiving data, especially from APIs.To turn this JSON string into a usable JavaScript object, you use JSON.parse():
 
 let validRes=JSON.parse(jsonRes);
 console.log(validRes.fact); //acessing json data through parse
@@ -1209,8 +1210,8 @@ console.log(validRes.fact); //acessing json data through parse
 let tyson = {
     name: "mike",
     stats: 29-1
-}
-let jsonChange = JSON.stringify(tyson);
+} 
+let jsonChange = JSON.stringify(tyson); //JSON.stringify() takes a JavaScript object and converts it to a JSON string.
 console.log(jsonChange);*/
 
 /*console.log(`Our First Request using fetch`);
