@@ -1,3 +1,7 @@
+if (process.env.NODE_ENV !== "production") {
+    require('dotenv').config();
+}
+
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
@@ -6,19 +10,31 @@ const path = require("path"); // joining paths or getting the file name easier a
 const methodOverride = require("method-override");
 const ejsMate = require("ejs-mate");
 const wrapAsync = require("./utils/wrapAsync.js"); //better way to write try and catch A custom middleware to wrap async functions so you don’t need try/catch everywhere
-const ExpressError = require("./utils/expressError.js");
+const ExpressError = require("./utils/ExpressError.js");
 const { listingSchema } = require("./schema.js");
 
-const MONGO_URL = "mongodb://127.0.0.1:27017/wanderlust"; //callback 
+// main().then(() => { //calling main function
+//     console.log(`Connected to DB`)
+// }).catch((err) => {
+//     console.log(err);
+// })
 
-main().then(() => { //calling main function
-    console.log(`Connected to DB`)
+// async function main() { //creating main function for db
+//     await mongoose.connect(MONGO_URL);
+// }
+
+// Use the Environment Variable from Render, or fallback to local for development
+// The connection part
+const dbUrl = process.env.ATLASDB_URL; 
+
+main().then(() => {
+    console.log("Connected to DB");
 }).catch((err) => {
     console.log(err);
-})
+});
 
-async function main() { //creating main function for db
-    await mongoose.connect(MONGO_URL);
+async function main() {
+    await mongoose.connect(dbUrl);
 }
 
 app.set("view engine", "ejs");
@@ -30,15 +46,15 @@ app.engine('ejs', ejsMate);
 app.use(express.static(path.join(__dirname, "/public")));
 
 app.get("/", (req, res) => {  //creating api
-   res.redirect("/listings");
+    res.redirect("/listings");
 });
- 
+
 //middleware function
-const validateLisitng= (req,res,next) => {
-    let {error} = lisitngSchema.validate(req.body);
+const validateLisitng = (req, res, next) => {
+    let { error } = lisitngSchema.validate(req.body);
     console.log(result);
-    if (error ) {
-        let errMsg = error.details.map((el)=> el.message).join(",")
+    if (error) {
+        let errMsg = error.details.map((el) => el.message).join(",")
         throw new ExpressError(400, errMsg);
     }
     else {
@@ -73,8 +89,8 @@ app.get("/listing/:id", wrapAsync(async (req, res) => {
 //     res.redirect("/listings");
 // })
 app.post("/listings", validateLisitng, wrapAsync(async (req, res, next) => {
-   
-    
+
+
     // Destructure the image field with a default fallback
     const newListing = new Listing({
         ...list,
@@ -83,7 +99,7 @@ app.post("/listings", validateLisitng, wrapAsync(async (req, res, next) => {
             filename: list.image?.filename || "default.jpg",
         },
     });
-   
+
     await newListing.save();
     res.redirect("/listings");
 })
